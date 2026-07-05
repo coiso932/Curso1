@@ -2,12 +2,37 @@ git init -b Original # Cria repositório na diretoria atual com o branch "Origin
 git add README.md # Criar/Alterar este ficheiro
 git commit -m "Primeiro(1) commit" #Envia para staging
 git push # Enviou alteração para o branch main
+--
 git add Git.txt Acrescenta ficheiro
 git commit -m "acrescentar git.txt" #Mensagem de commit
 git push # Envia o que está no staging
+--
+md teste1 # Criar diretoria
+cd teste1 # Mudar de diretoria
+echo dsfjdsf > texte1.txt # Criar ficheiro dentro da pasta
+cd ..
+git add pasta1
+git commit -m "Acrescentar pasta1"
+git push # Envia pasta1 e teste.txt lá dentro
+--
+md pasta2
+echo sdfjhsdo > pasta2/texte2.txt
+git add pasta2\teste2.txt #Adiciona ficheiro (e pasta, por ser nova) ao staging
+git commit -m "Acrescentar pasta2"
+git push
+--
+md pasta3
+echo sdfjhsdo > pasta3/texte31.txt
+echo sdfjhsdo > pasta3/texte32.txt
+echo sdfjhsdo > pasta3/texte33.txt
+git add pasta3
+git commit -m "Acrescentar pasta3 com vários ficheiros" #Envia pasta nova (e todo o conteúdo) para staging
+git push
+--
 
-	
-	
+
+
+
 (lixo) Criar repositório no github pela linha de comando
 	Ir para a diretoria onde se pretende criar o repositório
 	git init #cria repositório com o branch master
