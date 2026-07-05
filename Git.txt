@@ -29,6 +29,11 @@ git add pasta3
 git commit -m "Acrescentar pasta3 com vários ficheiros" #Envia pasta nova (e todo o conteúdo) para staging
 git push
 --
+Alterar pasta3/texte31.txt
+git add pasta3/texte31.txt
+git restore --staged pasta3/texte31.txt # retirou do staging (voltou para trás)
+--
+git add .
 
 
 
