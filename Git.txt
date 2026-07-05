@@ -37,7 +37,7 @@ git add . #Adiciona todas as alterações à staging
 git commit -m "Atualizar"
 git push
 --
-
+git commit Git.txt -m "Atualizar git.txt -1"
 
 
 
