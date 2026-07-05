@@ -1,0 +1,30 @@
+git init -b Original # Cria repositório na diretoria atual com o branch "Original"
+git add README.md # Criar/Alterar este ficheiro
+git commit -m "Primeiro(1) commit" #Envia para staging
+git push # Enviou alteração para o branch main
+
+
+	
+	
+(lixo) Criar repositório no github pela linha de comando
+	Ir para a diretoria onde se pretende criar o repositório
+	git init #cria repositório com o branch master
+	echo "https://rumos.udemy.com/course/git-e-github-do-basico-ao-avancado-c-gist-e-github-pages/" >> README.md
+	git add README.md
+	git commit -m "Primeiro(1) commit" #Envia para staging aquilo  que está no ADD
+	git branch -M master # Rename do branch???
+	git config --global user.email "github@lopes.cc" # Configurar utilizador
+	git config --global user.name "coiso932"
+	git remote add origin git@github.com:coiso932/Curso1.git
+	
+	git branch -M master # Rename do branch???
+	git remote add origin git@github.com:coiso932/Curso1.git
+	git push -u origin master # Envia alterações para servidor, 
+	
+
+
+
+Dúvidas
+	O branch pode ser só o tema?
+	Posso ter no PC o que está em QUA/PROD? São branches?
+	
