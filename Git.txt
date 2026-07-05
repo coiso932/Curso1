@@ -40,28 +40,40 @@ git push
 git commit Git.txt -m "Atualizar git.txt -1" # Gravar ficheiro
 git commit Git.txt -m "Atualizar git.txt -2" # Gravar ficheiro
 git push #Vão 2 alterações no mesmo push
-
-
-
-(lixo) Criar repositório no github pela linha de comando
-	Ir para a diretoria onde se pretende criar o repositório
-	git init #cria repositório com o branch master
-	echo "https://rumos.udemy.com/course/git-e-github-do-basico-ao-avancado-c-gist-e-github-pages/" >> README.md
-	git add README.md
-	git commit -m "Primeiro(1) commit" #Envia para staging aquilo  que está no ADD
-	git branch -M master # Rename do branch???
-	git config --global user.email "github@lopes.cc" # Configurar utilizador
-	git config --global user.name "coiso932"
-	git remote add origin git@github.com:coiso932/Curso1.git
-	
-	git branch -M master # Rename do branch???
-	git remote add origin git@github.com:coiso932/Curso1.git
-	git push -u origin master # Envia alterações para servidor, 
-	
+--
+eliminar pasta 3
+git commit -a -m "Eliminar pasta3" # Faz commit de todas as alterações
+git push
+--
+git pull #Vai buscar alterações ao servidor
+--
+mudar nome a fich1.txt para fich1_1.txt
+git add fich1.txt
+git add fich1_1.txt
+git commit -m "Renomear fich1.txt"
+git push
+--
+Alterar fich1_1.txt
+git add fich1_1.txt
+alterar novamente fich1_1.txt
+git add fich1_1.txt
+git commit -m "2 adds em simultâneo" #As 2 alterações pertencem ao mesmo commit
+alterar novamente fich1_1.txt
+git add fich1_1.txt
+git commit -m "mais 1 add"
+git push #Vão 2 comitts no mesmo push
+--
+Alterar fich1_1.txt
+git add fich1_1.txt
+Alterar fich1_1.txt
+git checkout fich1_1.txt #desfaz última alteração. O ficheiro fica como estava no último add
+git commit -m "xxx" #Envia tudo o que foi feito o add (ignora a alterasção desfeita pelo checkout. Mesmo sem o checkout, sem o add a última alteração não iria no commit
+git push
 
 
 
 Dúvidas
 	O branch pode ser só o tema?
 	Posso ter no PC o que está em QUA/PROD? São branches?
+	Renomear/eliminar ficheiros funciona?
 	
