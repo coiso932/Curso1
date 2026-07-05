@@ -83,12 +83,28 @@ git add fich1.txt
 Alterar fich1.txt # Neste ponto, temos 1 alteração com commit, outra com add e outra sem nada
 git reset --hard origin/main # Dezfaz todas as alterações locais que ainda não tenham ido para o servidor com git push, incluindo tudo o que foi feito o add ou o commit.
 --
-
+git branch # Lista branches com a indicação do atual
+git branch b1 # Cria branch b1 (não muda para lá)
+git branch b2 # Cria branch b2 (não muda para lá)
+--
+git branch apagar # Cria branch
+git branch # Ver que branches existem
+git branch -d apagar # Apaga o branch
+git branch # Ver que branches existem
+--
+git checkout b1 # Muda para o branch b1.
+git checkout -b b3 # Cria branch b3 por baixo do branch atual e muda para lá
+echo Criação > fich1_b3.txt
+git add fich1_b3.txt
+git commit -m "Commit no b3"
+git checkout b2 # Muda para b2. O que está no b3 desaparece
 
 
 
 Dúvidas
-	O branch pode ser só o tema?
+	O branch pode ser só o tema? Que validações são feitas?
 	Posso ter no PC o que está em QUA/PROD? São branches?
 	Renomear/eliminar ficheiros funciona?
+	Ainda precisamos de criar um pedido não original?
+	Posso criar um branch sem tema para alterações que não irão já subir no pipeline?
 	
