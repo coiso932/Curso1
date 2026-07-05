@@ -33,7 +33,10 @@ Alterar pasta3/texte31.txt
 git add pasta3/texte31.txt
 git restore --staged pasta3/texte31.txt # retirou do staging (voltou para trás)
 --
-git add .
+git add . #Adiciona todas as alterações à staging
+git commit -m "Atualizar"
+git push
+--
 
 
 
