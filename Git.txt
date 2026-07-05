@@ -38,6 +38,7 @@ git commit -m "Atualizar"
 git push
 --
 git commit Git.txt -m "Atualizar git.txt -1"
+git commit Git.txt -m "Atualizar git.txt -2"
 
 
 
