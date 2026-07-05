@@ -2,7 +2,9 @@ git init -b Original # Cria repositório na diretoria atual com o branch "Origin
 git add README.md # Criar/Alterar este ficheiro
 git commit -m "Primeiro(1) commit" #Envia para staging
 git push # Enviou alteração para o branch main
-
+git add Git.txt Acrescenta ficheiro
+git commit -m "acrescentar git.txt" #Mensagem de commit
+git push # Envia o que está no staging
 
 	
 	
