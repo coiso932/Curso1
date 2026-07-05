@@ -1,10 +1,10 @@
 git init -b Original # Cria repositório na diretoria atual com o branch "Original"
 git add README.md # Criar/Alterar este ficheiro
-git commit -m "Primeiro(1) commit" #Envia para staging
+git commit -m "Primeiro(1) commit" # Envia para staging
 git push # Enviou alteração para o branch main
 --
 git add Git.txt Acrescenta ficheiro
-git commit -m "acrescentar git.txt" #Mensagem de commit
+git commit -m "acrescentar git.txt" # Mensagem de commit
 git push # Envia o que está no staging
 --
 md teste1 # Criar diretoria
@@ -17,7 +17,7 @@ git push # Envia pasta1 e teste.txt lá dentro
 --
 md pasta2
 echo sdfjhsdo > pasta2/texte2.txt
-git add pasta2\teste2.txt #Adiciona ficheiro (e pasta, por ser nova) ao staging
+git add pasta2\teste2.txt # Adiciona ficheiro (e pasta, por ser nova) ao staging
 git commit -m "Acrescentar pasta2"
 git push
 --
@@ -26,26 +26,26 @@ echo sdfjhsdo > pasta3/texte31.txt
 echo sdfjhsdo > pasta3/texte32.txt
 echo sdfjhsdo > pasta3/texte33.txt
 git add pasta3
-git commit -m "Acrescentar pasta3 com vários ficheiros" #Envia pasta nova (e todo o conteúdo) para staging
+git commit -m "Acrescentar pasta3 com vários ficheiros" # Envia pasta nova (e todo o conteúdo) para staging
 git push
 --
 Alterar pasta3/texte31.txt
 git add pasta3/texte31.txt
-git restore --staged pasta3/texte31.txt # retirou do staging (voltou para trás)
+git restore --staged pasta3/texte31.txt # Retirou do staging (voltou para trás)
 --
-git add . #Adiciona todas as alterações à staging
+git add . # Adiciona todas as alterações à staging
 git commit -m "Atualizar"
 git push
 --
 git commit Git.txt -m "Atualizar git.txt -1" # Gravar ficheiro
 git commit Git.txt -m "Atualizar git.txt -2" # Gravar ficheiro
-git push #Vão 2 alterações no mesmo push
+git push # Vão 2 alterações no mesmo push
 --
 eliminar pasta 3
 git commit -a -m "Eliminar pasta3" # Faz commit de todas as alterações
 git push
 --
-git pull #Vai buscar alterações ao servidor
+git pull # Vai buscar alterações ao servidor
 --
 mudar nome a fich1.txt para fich1_1.txt
 git add fich1.txt
@@ -57,18 +57,33 @@ Alterar fich1_1.txt
 git add fich1_1.txt
 alterar novamente fich1_1.txt
 git add fich1_1.txt
-git commit -m "2 adds em simultâneo" #As 2 alterações pertencem ao mesmo commit
+git commit -m "2 adds em simultâneo" # As 2 alterações pertencem ao mesmo commit
 alterar novamente fich1_1.txt
 git add fich1_1.txt
 git commit -m "mais 1 add"
-git push #Vão 2 comitts no mesmo push
+git push # Vão 2 comitts no mesmo push
 --
 Alterar fich1_1.txt
 git add fich1_1.txt
 Alterar fich1_1.txt
-git checkout fich1_1.txt #desfaz última alteração. O ficheiro fica como estava no último add
-git commit -m "xxx" #Envia tudo o que foi feito o add (ignora a alterasção desfeita pelo checkout. Mesmo sem o checkout, sem o add a última alteração não iria no commit
+git checkout fich1_1.txt # Desfaz última alteração. O ficheiro fica como estava no último add
+git commit -m "xxx" # Envia tudo o que foi feito o add (ignora a alterasção desfeita pelo checkout. Mesmo sem o checkout, sem o add a última alteração não iria no commit
 git push
+--
+git mv fich1_1.txt fich1.txt
+git add . # Faz add de todas as alterações
+git commit -m "xx"
+git push
+--
+Alterar fich1.txt
+git add fich1.txt
+git commit -m "Alteração no fich1.txt"
+Alterar fich1.txt
+git add fich1.txt
+Alterar fich1.txt # Neste ponto, temos 1 alteração com commit, outra com add e outra sem nada
+git reset --hard origin/main # Dezfaz todas as alterações locais que ainda não tenham ido para o servidor com git push, incluindo tudo o que foi feito o add ou o commit.
+--
+
 
 
 
