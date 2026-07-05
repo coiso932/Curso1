@@ -37,8 +37,9 @@ git add . #Adiciona todas as alterações à staging
 git commit -m "Atualizar"
 git push
 --
-git commit Git.txt -m "Atualizar git.txt -1"
-git commit Git.txt -m "Atualizar git.txt -2"
+git commit Git.txt -m "Atualizar git.txt -1" # Gravar ficheiro
+git commit Git.txt -m "Atualizar git.txt -2" # Gravar ficheiro
+git push #Vão 2 alterações no mesmo push
 
 
 
