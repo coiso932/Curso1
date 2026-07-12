@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-Alteração 1 (para stash)
-=======
 Criação (para stash)
->>>>>>> Stashed changes
+Alteração 1 (para stash)
+
