@@ -3,4 +3,6 @@ Ficheiro criado no guthub.com
 Alteração 1
 Alteração 2
 Alteração 3
+Alteração 4 (para stash)
+Alteração 41 (para stash)
 Alteração 42 (para stash)
